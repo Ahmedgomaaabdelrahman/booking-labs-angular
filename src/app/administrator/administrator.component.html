@@ -3,58 +3,8 @@
         <button class="btn btn-primary me-md-2" type="button">Add New Lab</button>
     </div>
     <div class="row mt-5 mb-5">
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
+        <div class="col-md-4 mb-4" *ngFor="let lab of allLabs" >
+            <app-lab [lab]="lab"></app-lab>
         </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-        <div class="col-md-4 mb-4">
-            <app-lab></app-lab>
-        </div>
-
     </div>
 </div>

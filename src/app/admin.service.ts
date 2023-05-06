@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Lab } from './lab.model';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,6 @@ export class AdminService {
   }
   
   getAllLabs() {
-
+    return this.http.get<Lab[]>("http://localhost:3000/labs");
   }
 }

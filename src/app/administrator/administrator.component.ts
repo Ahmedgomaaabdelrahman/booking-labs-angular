@@ -10,10 +10,17 @@ import { Lab } from '../lab.model';
 export class AdministratorComponent implements OnInit{
 
   allLabs : Lab[] = [];
-  constructor(private adminService: AdminService){}
+  constructor(private adminService: AdminService){
+
+    console.log("Dddddd")
+  }
 
   ngOnInit(): void {
-    this.adminService.getAllLabs();
+    console.log("all labs ")
+    this.adminService.getAllLabs().subscribe((data) => {
+      console.log("all labs ", data);
+      this.allLabs = data;
+    });
   }
 
 }
